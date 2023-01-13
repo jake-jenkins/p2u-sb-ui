@@ -9,7 +9,54 @@
     <div class="flex flex-col min-h-screen">
       <div class="flex-none">
         <header class="container mx-auto p-4 flex items-center">
-          <div class="lg:w-72 flex-1 lg:flex-none">
+          <div class="lg:hidden w-24 flex items-center">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon text-sky-700 mr-4"
+                viewBox="0 0 512 512"
+                height="36"
+              >
+                <title>Menu</title>
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                  d="M80 160h352M80 256h352M80 352h352"
+                />
+              </svg>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon text-sky-700"
+                viewBox="0 0 512 512"
+                height="34"
+              >
+                <title>Search</title>
+                <path
+                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                  d="M338.29 338.29L448 448"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="mt-1 lg:w-72 flex justify-center lg:justify-start flex-1 lg:flex-none"
+          >
             <img src="p2u-logo.png" alt="Pharmacy2U Logo" />
           </div>
           <div class="hidden lg:flex flex-1 mx-4">
@@ -46,7 +93,7 @@
               </button>
             </div>
           </div>
-          <div class="lg:w-1/5 flex justify-end items-center">
+          <div class="w-24 lg:w-1/5 flex justify-end items-center">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +120,7 @@
             </a>
             <a
               href="#"
-              class="bg-sky-100 text-sky-700 font-medium text-xl mr-4 rounded-full w-10 h-10 flex items-center justify-center"
+              class="bg-sky-100 text-sky-700 font-medium text-xl lg:mr-4 rounded-full w-10 h-10 flex items-center justify-center"
               >JJ</a
             >
             <a href="#">
