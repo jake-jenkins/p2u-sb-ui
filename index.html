@@ -7,15 +7,107 @@
   </head>
   <body>
     <div class="flex flex-col min-h-screen">
-      <div class="flex-none bg-yellow-200">
-        <header class="container mx-auto bg-yellow-300 p-4">Header</header>
+      <div class="flex-none">
+        <header class="container mx-auto p-4 flex items-center">
+          <div class="lg:w-72 flex-1 lg:flex-none">
+            <img src="/p2u-logo.png" alt="Pharmacy2U Logo" />
+          </div>
+          <div class="hidden lg:flex flex-1 mx-4">
+            <div id="search-bar" class="relative py-1 w-96">
+              <input
+                type="text"
+                placeholder="Search services or products"
+                class="w-full rounded-xl px-3 py-2 bg-slate-50 border"
+              />
+              <button type="button" class="absolute top-3 right-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon text-sky-700"
+                  viewBox="0 0 512 512"
+                  height="26"
+                >
+                  <title>Search</title>
+                  <path
+                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M338.29 338.29L448 448"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/5 flex justify-end items-center">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon text-gray-600 mr-4 lg:mr-8"
+                viewBox="0 0 512 512"
+                height="34"
+              >
+                <title>Basket</title>
+                <path
+                  d="M68.4 192A20.38 20.38 0 0048 212.2a17.87 17.87 0 00.8 5.5L100.5 400a40.46 40.46 0 0039.1 29.5h232.8a40.88 40.88 0 0039.3-29.5l51.7-182.3.6-5.5a20.38 20.38 0 00-20.4-20.2H68.4zm193.32 160.07A42.07 42.07 0 11304 310a42.27 42.27 0 01-42.28 42.07z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M160 192l96-128 96 128"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="bg-sky-100 text-sky-700 font-medium text-xl mr-4 rounded-full w-10 h-10 flex items-center justify-center"
+              >JJ</a
+            >
+            <a href="#">
+              <span
+                class="mr-2 text-lg font-medium text-slate-700 hidden lg:block"
+                >Jake</span
+              >
+            </a>
+            <a class="mt-1 text-slate-700 hidden lg:block" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+                height="26"
+                class="pt-4"
+              >
+                <title>Chevron Down</title>
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M112 184l144 144 144-144"
+                />
+              </svg>
+            </a>
+          </div>
+        </header>
       </div>
-      <div class="flex-1 bg-blue-200 flex flex-col">
+      <div class="flex-1 bg-slate-50 flex flex-col">
         <div class="h-96 bg-green-500"></div>
         <div class="container mx-auto flex">
-          <aside class="bg-blue-400 w-80 hidden lg:flex mr-20 p-4">
-            Dashboard menu
-          </aside>
+          <aside class="w-80 hidden lg:flex mr-20 p-4">Dashboard menu</aside>
           <main class="flex-1">
             <div class="2xl:mx-20 bg-blue-300 p-4">Main content</div>
           </main>
