@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      <div class="flex-none bg-yellow-200">
+        <header class="container mx-auto bg-yellow-300 p-4">Header</header>
+      </div>
+      <div class="flex-1 bg-blue-200 flex flex-col">
+        <div class="h-96 bg-green-500"></div>
+        <div class="container mx-auto flex">
+          <aside class="bg-blue-400 w-80 hidden lg:flex">
+            Dashboard menu
+          </aside>
+          <main class="flex-1">
+            <div class="2xl:mx-32 bg-blue-300 p-4">Main content</div>
+          </main>
+        </div>
+      </div>
+      <div class="flex-none bg-purple-200">
+        <footer class="container mx-auto p-4 bg-purple-300">Footer</footer>
+      </div>
+    </div>
+  </body>
+</html>
