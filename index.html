@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>P2U UI</title>
+    <title>Personal health dashboard | Pharmacy2U</title>
   </head>
   <body>
     <div class="flex flex-col min-h-screen">
-      <div class="flex-none">
+      <div class="flex-none bg-white border-b">
         <header class="container mx-auto p-4 flex items-center">
           <div class="lg:hidden w-24 flex items-center">
             <div>
@@ -65,7 +65,8 @@
               <input
                 type="text"
                 placeholder="Search services or products"
-                class="w-full rounded-xl px-3 py-2 bg-slate-50 border"
+                class="w-full rounded-xl px-4 py-2 bg-slate-50 border outline-none focus:ring-sky-200 focus:ring"
+                autofocus
               />
               <button type="button" class="absolute top-3 right-3">
                 <svg
@@ -138,7 +139,7 @@
                 height="26"
                 class="pt-4"
               >
-                <title>Chevron Down</title>
+                <title>Open Account Menu</title>
                 <path
                   fill="none"
                   stroke="currentColor"
@@ -151,23 +152,142 @@
             </a>
           </div>
         </header>
+        <nav class="hidden lg:flex container mx-auto mb-4">
+          <a href="#" class="px-2 text-sky-700 font-medium text-lg mx-2 flex"
+            >Shop
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-1.5"
+              viewBox="0 0 512 512"
+              height="18"
+            >
+              <title>Open Shop Menu</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M112 184l144 144 144-144"
+              />
+            </svg>
+          </a>
+          <a href="#" class="px-2 text-sky-700 font-medium text-lg mx-2"
+            >NHS Prescriptions</a
+          >
+          <a href="#" class="px-2 text-sky-700 font-medium text-lg mx-2 flex"
+            >Online Doctor
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-1.5"
+              viewBox="0 0 512 512"
+              height="18"
+            >
+              <title>Open Online Doctor Menu</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M112 184l144 144 144-144"
+              /></svg
+          ></a>
+          <a href="#" class="px-2 text-sky-700 font-medium text-lg mx-2 flex"
+            >Services
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-1.5"
+              viewBox="0 0 512 512"
+              height="18"
+            >
+              <title>Open Services Menu</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M112 184l144 144 144-144"
+              /></svg
+          ></a>
+          <a href="#" class="px-2 text-sky-700 font-medium text-lg mx-2 flex"
+            >Health & Advice
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-1.5"
+              viewBox="0 0 512 512"
+              height="18"
+            >
+              <title>Open Health & Advice Menu</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M112 184l144 144 144-144"
+              /></svg
+          ></a>
+        </nav>
       </div>
-      <nav class="hidden lg:flex bg-yellow-100 container mx-auto p-4">
-        Desktop Navbar
-      </nav>
+
       <div class="flex-1 bg-slate-50 flex flex-col">
-        <div class="h-96 bg-green-500"></div>
-        <div class="container mx-auto flex">
-          <aside class="bg-yellow-100 w-80 hidden lg:flex mr-20 p-4">
-            Dashboard menu
+        <div
+          id="hero"
+          class="hidden h-96 bg-sky-800 flex justify-center items-center text-white"
+        >
+          Hero
+        </div>
+        <div class="container mx-auto flex my-8">
+          <aside class="w-80 hidden lg:flex lg:flex-col mr-16 p-4">
+            <a
+              href="#"
+              class="bg-sky-700 py-2 px-4 text-white w-full rounded-xl text-xl font-medium mb-4"
+              >My home</a
+            >
+            <a
+              href="#"
+              class="py-2 px-4 w-full rounded-xl text-xl font-medium mb-4 hover:bg-sky-100"
+              >Prescriptions</a
+            >
+            <a
+              href="#"
+              class="py-2 px-4 w-full rounded-xl text-xl font-medium mb-4 hover:bg-sky-100"
+              >Orders</a
+            >
+            <a
+              href="#"
+              class="py-2 px-4 w-full rounded-xl text-xl font-medium mb-4 hover:bg-sky-100"
+              >Offers</a
+            >
+            <a
+              href="#"
+              class="py-2 px-4 w-full rounded-xl text-xl font-medium mb-4 hover:bg-sky-100"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="py-2 px-4 w-full rounded-xl text-xl font-medium mb-4 hover:bg-sky-100"
+              >Account</a
+            >
           </aside>
           <main class="flex-1">
-            <div class="2xl:mx-20 bg-blue-300 p-4">Main content</div>
+            <div class="mx-4 xl:mx-20 p-4">
+              <h1 class="text-4xl">
+                Introducing your personal health dashboard.
+              </h1>
+              <div class="bg-white p-6 my-8 shadow-md rounded-3xl h-40">
+                Your orders
+              </div>
+            </div>
           </main>
         </div>
       </div>
-      <div class="flex-none bg-purple-200">
-        <footer class="container mx-auto p-4 bg-purple-300">Footer</footer>
+      <div class="flex-none bg-white border-t">
+        <footer class="container mx-auto p-4 h-24 flex items-center">
+          Footer
+        </footer>
       </div>
     </div>
   </body>
